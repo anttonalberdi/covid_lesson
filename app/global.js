@@ -38,7 +38,7 @@ var sb4runtime = {
 	mode : "prod",
 	requiresetting : {
 		waitSeconds : 0,
-urlArgs : "bust=1.0.0.202011301032_1613721955131",
+urlArgs : "bust=1.0.0.202011301032_1614067444208",
 //		deps : [ "css!style/axon.css",
 //				"css!style/ui-lightness/jquery-ui-1.10.4.custom.min.css" ],
 		deps : [],
@@ -130,9 +130,9 @@ urlArgs : "bust=1.0.0.202011301032_1613721955131",
 			"wgt/com.smartbuilder.axon.widget.text.text/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.text.text"),},	
 			"wgt/com.smartbuilder.axon.widget.path/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.path"),},	
 			"wgt/com.smartbuilder.axon.widget.button/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.button"),},	
-			"wgt/com.smartbuilder.axon.widget.line/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.line"),},	
-			"wgt/com.smartbuilder.axon.widget.hotspot/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.hotspot"),},	
 			"wgt/com.smartbuilder.axon.widget.slider/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.slider"),},	
+			"wgt/com.smartbuilder.axon.widget.hotspot/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.hotspot"),},	
+			"wgt/com.smartbuilder.axon.widget.line/s": { "widgetsvc" : new SB4WgtSvc("com.smartbuilder.axon.widget.line"),},	
 	};
 	var config = sb4runtime.requiresetting.config;
 	for ( var a in wconfig) {
@@ -169,7 +169,7 @@ var SB4API = {
     configJsList:[],
 	functions:{},
 	showErrorMessage:true,
-urlArgs : "bust=1.0.0.202011301032_1613721955131",
+urlArgs : "bust=1.0.0.202011301032_1614067444208",
     cacheSvgIdList:[],
 	lms:{"type":0,"isCommitLMS":false},
 	xapi:SB4XAPI==undefined?undefined:SB4XAPI,
