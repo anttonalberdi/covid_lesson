@@ -71,7 +71,7 @@ if(typeof  ResizeObserver!="function"){
 //load underscore-min.js
 if (typeof _ != 'function') {
     var underScoreScript = document.createElement("script");
-    underScoreScript.src = document.currentScript.dataset.launchPath+'lib/underscore-min.js?bust=1.0.0.202011301032_1614067444208';
+    underScoreScript.src = document.currentScript.dataset.launchPath+'lib/underscore-min.js?bust=1.0.0.202011301032_1614256526339';
     document.body.appendChild(underScoreScript);
 }
 
@@ -170,7 +170,7 @@ SB4InitAPI.prototype.init = function () {
         this.SB4ContentWrapper.innerHTML = '<iframe id="SB4Content" frameborder="0"></iframe><div id="scaleOverlay" style="width:100%;height:100%;background:rgba(128,128,128,0.85);text-align:center;position:absolute;font-size:48pt;font-weight:bold;color:white;display: none;justify-content: center;align-items: center;flex-direction: column"></div>';
         this.iframe = document.getElementById('SB4Content');
         this.iframe.style['position'] = "absolute";
-        var sourceHead = heads + '<script src="app/global.js?bust=1.0.0.202011301032_1614067444208"></script><script data-main="main.js?bust=1.0.0.202011301032_1614067444208" src="lib/require.js?bust=1.0.0.202011301032_1614067444208"></script>\n';
+        var sourceHead = heads + '<script src="app/global.js?bust=1.0.0.202011301032_1614256526339"></script><script data-main="main.js?bust=1.0.0.202011301032_1614256526339" src="lib/require.js?bust=1.0.0.202011301032_1614256526339"></script>\n';
         this.iframe.contentWindow.document.open();
         // init SB4API before loading global.js
         this.iframe.contentWindow.SB4API = this.getInitSB4API();
@@ -213,10 +213,10 @@ SB4InitAPI.prototype.init = function () {
 
         document.head.insertAdjacentHTML('beforeend', heads);
         var s1 = document.createElement('script');
-        s1.setAttribute('src', 'app/global.js?bust=1.0.0.202011301032_1614067444208');
+        s1.setAttribute('src', 'app/global.js?bust=1.0.0.202011301032_1614256526339');
         var s2 = document.createElement('script');
-        s2.setAttribute('data-main', 'main.js?bust=1.0.0.202011301032_1614067444208');
-        s2.setAttribute('src', 'lib/require.js?bust=1.0.0.202011301032_1614067444208');
+        s2.setAttribute('data-main', 'main.js?bust=1.0.0.202011301032_1614256526339');
+        s2.setAttribute('src', 'lib/require.js?bust=1.0.0.202011301032_1614256526339');
         document.head.appendChild(s1);
         document.head.appendChild(s2);
     }
